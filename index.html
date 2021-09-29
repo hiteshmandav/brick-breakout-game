@@ -3,12 +3,33 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Game Dev Tutoril</title>
+    <title>Brick Breakout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
 <body>
-    <canvas id="myCanvas" width="480" height="320"></canvas>    
-    <script src="main.js"></script>
+    <div class="background">
+
+        <div class="controls">
+            <h1 class="heading">Brick Breakout Game</h1>
+        </div>
+        <div class="controls">
+            <button onclick= "start()" class="start-btn">Start the game</button>
+            <button onclick= "changeLevel()" class="start-btn" id="cLButton">Next Level</button>
+            <button onclick= "stop()" class="start-btn">Stop the game</button>
+        </div>
+        <div class="canvas">
+            <canvas id="myCanvas" width="480" height="320"></canvas>    
+            <script src="main.js"></script>
+        </div>
+        <div class="gameStatus">
+            <div id="successStatus"></div>
+        </div>
+
+        <div class="copyright">
+            <p>Build by HITESH MANDAV using HTML, CSS and JS only. For any suggestions please reachout @ 
+            <a target="_blank" href="http://localhost:4200/contact">here</a></p>
+        </div>
+    </div>
 </body>
 </html>
